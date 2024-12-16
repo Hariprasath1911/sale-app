@@ -11,7 +11,7 @@ model = load_model()
 
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
-st.image("C:/Users/DINESH/Desktop/Data for DS/vscode/sales/1.png")
+st.image("https://raw.githubusercontent.com/Hariprasath1911/sale-app/main/1.png")
 st.write("Enter the required details below to predict the house price.")
 
 # Input Fields
