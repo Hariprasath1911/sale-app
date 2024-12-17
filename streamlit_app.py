@@ -47,10 +47,12 @@ QS_BEDROOM = st.slider("Quality Score for Bedrooms", min_value=0.0, max_value=5.
 QS_OVERALL = st.slider("Overall Quality Score", min_value=0.0, max_value=5.0, step=0.1, value=3.0)
 REG_FEE = st.number_input("Registration Fee", min_value=0.0, step=0.01, value=50000.0)
 COMMIS = st.number_input("Commission", min_value=0.0, step=0.01, value=20000.0)
-year_date_sale = st.number_input("Year of Sale", min_value=2000, max_value=2100, step=1, value=2023)
-month_date_sale = st.slider("Month of Sale", min_value=1, max_value=12, step=1, value=1)
-day_date_sale = st.slider("Day of Sale", min_value=1, max_value=31, step=1, value=1)
-week_date_sale = st.slider("Week of Sale", min_value=1, max_value=52, step=1, value=1)
+selected_date = st.date_input("Select a date",value=date.today(),min_value=(2000,1,1))
+if selected_date:
+    month_date_sale = selected_date.day
+    day_date_sale = selected_date.month
+    year_date_sale = selected_date.year
+    week_date_sale = selected_date.isocalendar()[1]
 build_age = st.number_input("Building Age (in years)", min_value=0, step=1, value=10)
 
 # Prepare Input Data
