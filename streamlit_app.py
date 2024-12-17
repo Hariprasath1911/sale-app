@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import pickle
+from datetime import date
 
 # Load the trained model
 def load_model():
@@ -47,7 +48,7 @@ QS_BEDROOM = st.slider("Quality Score for Bedrooms", min_value=0.0, max_value=5.
 QS_OVERALL = st.slider("Overall Quality Score", min_value=0.0, max_value=5.0, step=0.1, value=3.0)
 REG_FEE = st.number_input("Registration Fee", min_value=0.0, step=0.01, value=50000.0)
 COMMIS = st.number_input("Commission", min_value=0.0, step=0.01, value=20000.0)
-selected_date = st.date_input("Select a date",min_value=(2000,1,1))
+selected_date = st.date_input("Select a date")
 if selected_date:
     month_date_sale = selected_date.day
     day_date_sale = selected_date.month
