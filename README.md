@@ -1,19 +1,8 @@
-# 🎈 Blank app template
-
-A simple Streamlit app template for you to modify!
-
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
-
-### How to run it on your own machine
-
-1. Install the requirements
-
-   ```
-   $ pip install -r requirements.txt
-   ```
-
-2. Run the app
-
-   ```
-   $ streamlit run streamlit_app.py
-   ```
+#Chennai Area Sales Price Prediction
+A Streamlit web application for predicting real estate sales prices in the Chennai area, powered by an XGBoost machine learning model. This project provides an easy-to-use interface for making predictions based on various property features.
+#Features
+Predict property sales prices in Chennai with high accuracy.
+User-friendly interface built with Streamlit.
+Utilizes XGBoost, a powerful gradient-boosting algorithm for machine learning.
+Accepts user inputs for key property details such as size, location, and amenities.
+Dynamic visualizations and real-time predictions.
