@@ -9,3 +9,8 @@ User-friendly interface built with Streamlit.
 Utilizes XGBoost, a powerful gradient-boosting algorithm for machine learning.
 Accepts user inputs for key property details such as size, location, and amenities.
 Dynamic visualizations and real-time predictions.
+
+
+**applink**
+
+salepriceprediction.streamlit.app
