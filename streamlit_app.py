@@ -30,7 +30,7 @@ def set_background_image_local(image_path):
         unsafe_allow_html=True
     )
 
-set_background_image_local(r"s1.png")
+set_background_image_local(r"s1.jpg")
 
 # Streamlit App Title
 st.title("Predicting House Prices Based on Past Sales Data")
