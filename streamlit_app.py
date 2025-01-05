@@ -2,6 +2,7 @@ import streamlit as st
 import pandas as pd
 import pickle
 from datetime import date
+import base64
 
 # Load the trained model
 def load_model():
